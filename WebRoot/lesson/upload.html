@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>upload.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  		请选择要上传的文件:
+  		<br />
+  <!-- 表单  method=post
+  		multipart/form-data 使用这种编码 可以上传文件
+  		entype 是用于设置上传的参数的编码格式（application/x-www-form-urlencoded或者multipart/form-data）
+        application/x-www-form-urlencoded （默认值） 不能上传文件  ?键=值&键1=值1
+  
+   -->
+  
+    <form action="../UploadServlet" method="post"
+        enctype="multipart/form-data">
+                          姓名:		<input type="text" name="myName" size="50" /><br />
+                          
+        <!-- 必须存在一个file框用于选择文件 -->
+		<input type="file" name="myFile" size="50" /><br />
+		<input type="file" name="myFile1" size="50" /><br />
+		<br />
+		<input type="submit" value="上传文件" />
+	</form>
+	
+	<a href="../DownloadServlet">下载</a>
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>QueryGoodServlet</servlet-name>
+    <servlet-class>cn.et.QueryGoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>cn.et.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyShareDownload</servlet-name>
+    <servlet-class>servlet.MyShareDownload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NationServlet</servlet-name>
+    <servlet-class>servlet.NationServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>QueryGoodServlet</servlet-name>
+    <url-pattern>/QueryGoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyShareDownload</servlet-name>
+    <url-pattern>/MyShareDownload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NationServlet</servlet-name>
+    <url-pattern>/NationServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
